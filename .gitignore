@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+output_presentation.pptx
+output_presentation.pdf
+*.pdf
+.claude/
