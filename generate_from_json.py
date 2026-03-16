@@ -66,7 +66,8 @@ def main():
         return
 
     # JSON読み込み
-    json_path = os.path.join("E:/ws/document", args.input)
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    json_path = os.path.join(script_dir, args.input)
     if not os.path.exists(json_path):
         # カレントディレクトリも探す
         if os.path.exists(args.input):

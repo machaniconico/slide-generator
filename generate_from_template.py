@@ -13,8 +13,9 @@ from pptx.util import Pt
 from pptx.dml.color import RGBColor
 
 
-TEMPLATES_DIR = "E:/ws/document/templates"
-OUTPUT_DIR = "E:/ws/document"
+_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+TEMPLATES_DIR = os.path.join(_SCRIPT_DIR, "templates")
+OUTPUT_DIR = _SCRIPT_DIR
 
 # フィールド別デフォルトフォントサイズ
 # テンプレートのテキストボックス実測値から算出
